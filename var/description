@@ -1,0 +1,3 @@
+Main Like Module completes the toplevel proxy of
+the Object class, making the toplevel behave just
+as if it were a module context.
