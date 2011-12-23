@@ -19,7 +19,7 @@ requirements:
   groups:
   - build
   development: true
-- name: lemon
+- name: citron
   groups:
   - test
   development: true
@@ -52,4 +52,4 @@ description: ! 'Main Like Module completes the toplevel proxy of
 
   as if it were a module context.'
 organization: Rubyworks
-date: '2011-12-19'
+date: '2011-12-23'
