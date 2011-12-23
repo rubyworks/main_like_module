@@ -1,1 +1,36 @@
-My GitHub Page
+<h1>Main Like Module</h1>
+
+<p><a href="http://travis-ci.org/rubyworks/main_like_module"><img src="https://secure.travis-ci.org/rubyworks/main_like_module.png" alt="Build Status" /></a></p>
+
+<p><strong>DESCRIPTION</strong></p>
+
+<p>Did you know <code>main</code>? Main is actually the special name Ruby gives
+to the toplevel object. This object is very special, it is actually
+in part a proxy object for the Object class itself. But it's only
+a partial implementation.</p>
+
+<p>I have long argued that the toplevel object should be replaced with
+an self extended module, e.g.</p>
+
+<pre><code>module Toplevel
+  extend self
+  # ruby is excuted here
+end
+</code></pre>
+
+<p>This would have a couple of signifficant benefits. First, the toplevel
+would no longer polute every other object in the system. And second,
+the toplevel would be a fully operation module context.</p>
+
+<p>Alas, so far, no avail. But there is alwasy hope. But in the mean time,
+we can at least support the second point mentioned by completing the
+proxy, making it emulate the Object class context in full. And that's
+exactly what Main Like Module does.</p>
+
+<p><strong>COPYRIGHTS</strong></p>
+
+<p>Copyright (c) 2009 Rubyworks</p>
+
+<p>Main as Module is distributable in accordance with the BSD-2-Clause license.</p>
+
+<p>See COPYING.md for details.</p>
