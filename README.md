@@ -1,5 +1,7 @@
 # Main Like Module
 
+[![Build Status](https://secure.travis-ci.org/rubyworks/main_like_module.png)](http://travis-ci.org/rubyworks/main_like_module)
+
 __DESCRIPTION__
 
 Did you know `main`? Main is actually the special name Ruby gives
