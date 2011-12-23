@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require 'ae'
+require 'citron'
+
+$:.unshift('./test')
+
+# Default test run.
+Test.run do |r|
+  r.files << 'test'
+end
+
+# Generate SimpleCov coverage report.
+# Albeit, it probably won't do this project much good.
+Test.run :cov do |r|
+  r.files << 'test'
+  require 'simplecov'
+  SimpleCov.start do
+    coverage_dir 'log/coverage'
+    add_filter "/test/"
+  end
+end
+
