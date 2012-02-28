@@ -2,6 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/rubyworks/main_like_module.png)](http://travis-ci.org/rubyworks/main_like_module)
 
+
 __DESCRIPTION__
 
 Did you know `main`? Main is actually the special name Ruby gives
@@ -14,16 +15,16 @@ an self extended module, e.g.
 
     module Toplevel
       extend self
-      # ruby is excuted here
+      # ruby is executed here
     end
 
-This would have a couple of signifficant benefits. First, the toplevel
-would no longer polute every other object in the system. And second,
-the toplevel would be a fully operation module context.
+This would have a couple of significant benefits. First, the toplevel
+would no longer pollute every other object in the system. And second,
+the toplevel would be a fully operational module context.
 
-Alas, so far, no avail. But there is alwasy hope. But in the mean time,
-we can at least support the second point mentioned by completing the
-proxy, making it emulate the Object class context in full. And that's
+Alas, so far, no avail. But there's always hope. In the mean time,
+we can at least support the second point by completing the proxy,
+making it emulate the Object class context in full. And that's 
 exactly what Main Like Module does.
 
 
